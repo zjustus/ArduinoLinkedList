@@ -3,7 +3,7 @@ A full featured and ultra light linked list data structure for the Arduino frame
 
 This is coded under the JustusDevTools namespace
 
-#Functions
+##Functions
 LinkedList() - inits the list
 ~LinkedList() - deletes the linked list
 unt8_t length() - returns size of the list
@@ -18,7 +18,8 @@ void move_forward() - moves 1 forward
 void move_back() - moves 1 back
 T *to_array() - converts the linked list to an array of the given type
 
-#Example
+##Example
+```
 #include <LinkedList.h>
 LinkedList<unit8_t> x;
 x.add('a');
@@ -27,3 +28,4 @@ x.add('c');
 x.add('d');
 
 const char* y = x.to_array();
+```
